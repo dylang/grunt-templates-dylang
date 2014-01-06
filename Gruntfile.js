@@ -50,47 +50,12 @@ module.exports = function(grunt) {
 
     jshint: {
       options: {
-        jshintrc: '.jshintrc',
-        force: true
+        node: true
       },
       all: [
         'Gruntfile.js',
-        'tasks/**/*.js',
-        'tests/**/*'
-      ],
-      fixtures: [
-        'test/fixtures/*.js'
+        'tasks/**/*.js'
       ]
-    },
-
-
-    // Pull down a list of repos from Github.
-    repos: {
-      helpers: {
-        options: {
-          username: 'dylang',
-          path: '/users/dylang/repos?page=1&per_page=100',
-          include: ['grunt'],
-          exclude: ['grunt-notify']
-        },
-        files: {
-          'templates/repos.json': ['repos?page=1&per_page=100']
-        }
-      }
-    },
-
-    readme: {
-      options: {
-        templates: 'templates',
-        alt: {
-          src: ['templates/README.tmpl.md'],
-          dest: './'
-        },
-        metadata: //['templates/repos.json']
-        {
-          repos: '<%= reposData %>'
-        }
-      }
     }
 
   });
@@ -104,6 +69,7 @@ module.exports = function(grunt) {
 
   // By default, lint and run all tests.
   grunt.registerTask('default', [
+    'repos',
     'readme'
   ]);
 

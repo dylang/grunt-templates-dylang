@@ -7,4 +7,4 @@ Here are some other Node modules Dylan has created.
 | Name | Description | Github Stars | Npm Installs |
 |---|---|--:|--:|{% _.each(repos, function(repo) { %} {%= n %} | [{%= repo.name %}]({%= repo.url %}) | {%= repo.description %} | {%= repo.stars %} | {%= repo.downloads %} |{% }); %}
 
-_Data compiled on {%= grunt.template.date("fullDate") %}, using anthology._
+_Data compiled on {%= grunt.template.date("fullDate") %}, using [anthology](https://github.com/dylang/anthology)._
