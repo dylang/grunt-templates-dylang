@@ -4,6 +4,8 @@
 var grunt = require('grunt');
 grunt.template.addDelimiters('readme', '{%', '%}');
 
+//comma-it
+
 module.exports = function (grunt) {
 
   var path = require('path');
@@ -17,7 +19,8 @@ module.exports = function (grunt) {
         dest: './'
       },
       metadata: [
-        path.join(__dirname, '../data/repos.json')
+        path.join(__dirname, '../data/repos.json'),
+        {'commaIt': require('humanize-number')}
       ]
     }
   };
