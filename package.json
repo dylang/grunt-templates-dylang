@@ -39,7 +39,7 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "anthology": "0.0.1",
+    "anthology": "0.0.3",
     "grunt-readme": "~0.4.5",
     "grunt": "~0.4.1",
     "humanize-number": "0.0.2"
