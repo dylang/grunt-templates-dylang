@@ -5,8 +5,8 @@ Dylan is a senior JavaScript developer and tech lead at [Opower](http://opower.c
 Here are some other Node modules Dylan has created:
 
 | Name | Description | Github Stars | Npm Installs |
-|---|---|--:|--:|{% _.each(repos, function(repo) {
-%} {%= n %} | [{%= repo.name %}]({%= repo.url
+|---|---|--:|--:|{% _.each(repos, function(repo) {%}
+| [{%= repo.name %}]({%= repo.url
 %}) | {%= repo.description
 %} | {%= repo.stars > 10 ? commaIt(repo.stars) : '_New!_'
 %} | {%= repo.stars > 0 ? commaIt(repo.downloads)  : '_TBD_'
