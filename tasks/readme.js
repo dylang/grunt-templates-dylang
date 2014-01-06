@@ -12,10 +12,11 @@ module.exports = function (grunt) {
 
   var config = {
     options: {
+      readme: path.join(__dirname, '../includes/readme/README.md'),
       docs: 'templates',
       templates: 'node_modules/grunt-templates-dylang',
       alt: {
-        src: ['templates/README.tmpl.md'],
+        src: [path.join(__dirname, '../includes/readme/README')],
         dest: './'
       },
       metadata: [
@@ -26,6 +27,7 @@ module.exports = function (grunt) {
   };
 
   grunt.config('readme', config);
+
 
   require('grunt-readme/tasks/readme')(grunt);
 };
