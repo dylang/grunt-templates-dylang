@@ -1,6 +1,15 @@
+<!---
+
+This file was automatically generated.
+
+Use `grunt readme` to regenerate.
+
+--->
 {%= _.include('readme/header.md') %}
 
-{%= _.include('readme/getting-started.md') %}
+{% if (_.contains(name, 'grunt')) { %}
+{%= _.include('readme/getting-started-grunt.md') %}
+{% } %}
 
 {%= _.doc(name + '.md') %}
 
@@ -8,6 +17,10 @@
 
 {%= _.include('readme/footer.md') %}
 
-[grunt]: http://gruntjs.com/
-[Getting Started]: https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md
-[package.json]: https://npmjs.org/doc/json.html
+<!---
+
+This file was automatically generated.
+
+Use `grunt readme` to regenerate.
+
+--->
