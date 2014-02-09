@@ -1,7 +1,7 @@
 {
   "name": "grunt-templates-dylang",
   "description": "Templates for dylang's projects.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/dylang/grunt-templates-dylang",
   "author": {
     "name": "Dylan Greene",
