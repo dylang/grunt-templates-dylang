@@ -7,6 +7,8 @@ Use `grunt readme` to regenerate.
 --->
 {%= _.include('readme/header.md') %}
 
+{%= _.doc('readme/screenshots.md') %}
+
 {% if (_.contains(name, 'grunt')) { %}
 {%= _.include('readme/getting-started-grunt.md') %}
 {% } %}

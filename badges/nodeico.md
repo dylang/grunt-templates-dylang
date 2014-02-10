@@ -1,1 +1,1 @@
-{%= '[![' + name + '](https://nodei.co/npm/' + name + '.png?downloads=true "' + name + '")](https://nodei.co/npm/' + name + ')' %}
+[![{%= name %}](https://nodei.co/npm/{%= name %}.png?downloads=true "{%= name %}")](https://nodei.co/npm/{%= name %})

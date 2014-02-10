@@ -2,4 +2,4 @@
 
 > {%= description %}
 
-{%= _.badge('nodeico'} %}
+{%= _.badge('nodeico') %}

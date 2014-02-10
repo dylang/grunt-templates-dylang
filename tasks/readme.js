@@ -10,6 +10,12 @@ module.exports = function(grunt) {
 
     var path = require('path');
 
+    function image(title, imageUrl, linkUrl) {
+        return (linkUrl ? '[' : '')
+            + '![' + title + '](' + imageUrl  +' "' + title + '")'
+            + (linkUrl ? '](' + linkUrl + ')' : '');
+    }
+
     var config = {
         options: {
             readme: path.join(__dirname, '../includes/readme/README.md'),
@@ -25,9 +31,12 @@ module.exports = function(grunt) {
                     number: require('humanize-number')
                 },
                 {
+                    image: image,
+                },
+                {
                     screenshot: function(caption, url) {
                         return '' +
-                        '| ![' + caption + '](' + url  +' "' + caption + '") |\n' +
+                        '| ' + image(caption, url) + ' |\n' +
                         '|:-------------:|\n' +
                         '| ' + caption + ' |';
                     }
