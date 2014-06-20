@@ -1,10 +1,3 @@
-<!---
-
-This file was automatically generated.
-
-Use `grunt readme` to regenerate.
-
---->
 {%= _.include('readme/header.md') %}
 
 {%= _.doc('readme/screenshots.md') %}
@@ -18,11 +11,3 @@ Use `grunt readme` to regenerate.
 {%= _.include('readme/related-repos.md') %}
 
 {%= _.include('readme/footer.md') %}
-
-<!---
-
-This file was automatically generated.
-
-Use `grunt readme` to regenerate.
-
---->
