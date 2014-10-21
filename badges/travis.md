@@ -1,1 +1,1 @@
-{% if (travis) { %} [![Build Status]({%= travis %}.png)]({%= travis %}){% } %}
+{% if (travis) { %} [![Build Status]({%= travis %}.svg)]({%= travis %}){% } %}
