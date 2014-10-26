@@ -9,7 +9,7 @@ module.exports = function gruntTask(grunt) {
     var done = this.async();
 
     require('anthology')
-      .forUser('dylang', ['*', '!' + pkg.name, '!jobvite', '!opower-jobs', '!tramp', '!lean', '!*dylang*'])
+      .forUser('dylang', ['*', '!' + pkg.name, '!jobvite', '!flowdock-refined', '!logging', '!opower-jobs', '!tramp', '!lean', '!*dylang*'])
       .then(function(data){
         grunt.config('repoData', data);
           grunt.file.write(path.join(__dirname, '../data/repos.json'), JSON.stringify({repos: data }, null, 2));

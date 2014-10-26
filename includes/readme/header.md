@@ -1,5 +1,3 @@
-# {%= name %} {%= _.badge('fury') %} {%= _.badge('travis') %} {% if (_.contains(name, 'grunt')) { %}{%= _.badge('grunt') %}{% } %}
+# {%= name %} {%= _.badge('version') %}  {%= _.badge('downloads') %} {%= _.badge('travis') %}
 
 > {%= description %}
-
-{%= _.badge('nodeico') %}

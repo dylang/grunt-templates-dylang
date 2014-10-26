@@ -1,21 +1,14 @@
-## About the Author
+## About the Author [![@dylang](https://img.shields.io/badge/github-dylang-green.svg?style=flat-square)](https://github.com/dylang) [![@dylang](https://img.shields.io/badge/twitter-dylang-blue.svg?style=flat-square)](https://twitter.com/dylang)
 
-Hello fellow developer! My name is [Dylan Greene](https://github.com/dylang). When
-not overwhelmed with my two kids I enjoy contributing to the open source community.
-I'm a tech lead at [Opower](http://opower.com). I lead a team using Grunt and Angular to build software that
-successfully helps people like us use less power.
-Not too long ago I co-created [Doodle or Die](http://doodleordie.com), a hilarious web game with millions of
-doodles that won us Node Knockout for the "most fun" category.
-I'm [dylang](https://twitter.com/dylang) on Twitter and other places.
+Hi! Thanks for checking {{{%= name %}}}! My name is **Dylan Greene**. When not overwhelmed with my two young kids I enjoy contributing
+to the open source community. I'm also a tech lead at [Opower](http://opower.com).
 
-Some of my other Node projects:
+Here's some of my other Node projects:
 
-| Name | Description | Github Stars | Npm Installs |
+| Name | Description | npm&nbsp;Downloads |
 |---|---|--:|--:|{% _.each(repos, function(repo) {%}
-| [`{%= repo.name %}`]({%= repo.url
+| [`{%= repo.name.replace(/-/g, '‑') %}`]({%= repo.url
 %}) | {%= repo.description
-%} | {%= repo.stars > 10 ? number(repo.stars) : '_New!_'
-%} | {%= repo.stars > 0 ? number(repo.downloads)  : '_TBD_'
-%} |{% }); %}
+%} | [![{%= repo.name %}](https://img.shields.io/npm/dm/{%= repo.name %}.svg?style=flat-square)](https://www.npmjs.org/package/{%= repo.name %}) |{% }); %}
 
 _This list was generated using [anthology](https://github.com/dylang/anthology)._

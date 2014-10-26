@@ -1,1 +1,1 @@
-{% if (travis) { %} [![Build Status]({%= travis %}.svg)]({%= travis %}){% } %}
+{% if (travis) { %} [![Build Status](http://img.shields.io/travis/{%= username %}/{%= name %}.svg?style=flat-square)]({%= travis %}){% } %}
