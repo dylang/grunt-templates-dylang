@@ -1,3 +1,3 @@
-# {%= name %} {%= _.badge('version') %}  {%= _.badge('downloads') %} {%= _.badge('travis') %}
+# {%= name %} {%= _.badge('travis') %} {%= _.badge('downloads') %}
 
 > {%= description %}
