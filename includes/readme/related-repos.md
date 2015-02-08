@@ -1,7 +1,7 @@
-## About the Author [![@dylang](https://img.shields.io/badge/github-dylang-green.svg?style=flat-square)](https://github.com/dylang) [![@dylang](https://img.shields.io/badge/twitter-dylang-blue.svg?style=flat-square)](https://twitter.com/dylang)
+## About the Author
 
-Hi! Thanks for checking `{%= name %}`! My name is **Dylan Greene**. When not overwhelmed with my two young kids I enjoy contributing
-to the open source community. I'm also a tech lead at [Opower](http://opower.com).
+Hi! Thanks for checking out this project! My name is **Dylan Greene**. When not overwhelmed with my two young kids I enjoy contributing
+to the open source community. I'm also a tech lead at [Opower](http://opower.com). [![@dylang](https://img.shields.io/badge/github-dylang-green.svg)](https://github.com/dylang) [![@dylang](https://img.shields.io/badge/twitter-dylang-blue.svg)](https://twitter.com/dylang)
 
 Here's some of my other Node projects:
 

@@ -7,3 +7,4 @@ Screenshots are [CC BY-SA](http://creativecommons.org/licenses/by-sa/4.0/) (Attr
 
 ***
 _Generated using [grunt-readme](https://github.com/assemble/grunt-readme) with [grunt-templates-dylang](https://github.com/dylang/grunt-templates-dylang) on {%= grunt.template.date("fullDate") %}._
+_To make changes to this document look in `/templates/readme/`

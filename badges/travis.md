@@ -1,1 +1,1 @@
-{% if (travis) { %} [![Build Status](http://img.shields.io/travis/{%= username %}/{%= name %}.svg?style=flat-square)](https://travis-ci.org/{%= username %}/{%= name %}){% } %}
+{% if (travis) { %} [![Build Status](http://img.shields.io/travis/{%= repoName %}.svg)](https://travis-ci.org/{%= repoName %}){% } %}

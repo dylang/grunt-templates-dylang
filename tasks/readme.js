@@ -10,10 +10,18 @@ module.exports = function(grunt) {
 
     var path = require('path');
 
-    function image(title, imageUrl, linkUrl) {
+    function image (title, imageUrl, linkUrl) {
         return (linkUrl ? '[' : '') +
-          '![' + title + '](' + imageUrl  +' "' + title + '")' +
-          (linkUrl ? '](' + linkUrl + ')' : '');
+            '![' + title + '](' + imageUrl + ' "' + title + '")' +
+            (linkUrl ? '](' + linkUrl + ')' : '');
+    }
+
+    function repo () {
+        var pkg = require(path.resolve(process.cwd(),'package.json'));
+        var url = pkg.repository.url;
+        var repoName = url && url.replace(/.*:\/\/github.com\/(.*)\.git/, '$1');
+        console.log('repoName = ', repoName);
+        return repoName;
     }
 
     var config = {
@@ -28,6 +36,9 @@ module.exports = function(grunt) {
             metadata: [
                 path.join(__dirname, '../data/repos.json'),
                 {
+                    repoName: repo()
+                },
+                {
                     number: require('humanize-number')
                 },
                 {
@@ -36,9 +47,9 @@ module.exports = function(grunt) {
                 {
                     screenshot: function(caption, url) {
                         return '' +
-                        '| ' + image(caption, url) + ' |\n' +
-                        '|:-------------:|\n' +
-                        '| ' + caption + ' |';
+                            '| ' + image(caption, url) + ' |\n' +
+                            '|:-------------:|\n' +
+                            '| ' + caption + ' |';
                     }
                 }
             ]
