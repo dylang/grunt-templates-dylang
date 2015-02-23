@@ -6,7 +6,7 @@ to the open source community. I'm also a tech lead at [Opower](http://opower.com
 Here's some of my other Node projects:
 
 | Name | Description | npm&nbsp;Downloads |
-|---|---|--:|--:|{% _.each(repos, function(repo) {%}
+|---|---|---|{% _.each(repos, function(repo) {%}
 | [`{%= repo.name.replace(/-/g, '‑') %}`]({%= repo.url
 %}) | {%= repo.description
 %} | [![{%= repo.name %}](https://img.shields.io/npm/dm/{%= repo.name %}.svg?style=flat-square)](https://www.npmjs.org/package/{%= repo.name %}) |{% }); %}
