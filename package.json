@@ -1,7 +1,7 @@
 {
   "name": "grunt-templates-dylang",
   "description": "Templates for dylang's projects.",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "homepage": "https://github.com/dylang/grunt-templates-dylang",
   "author": {
     "name": "Dylan Greene",
@@ -18,19 +18,17 @@
     }
   ],
   "main": "/templates",
-  "engines": {
-    "node": ">= 0.10.0"
-  },
   "scripts": {
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.3",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-notify": "^0.4.1",
-    "grunt-release": "^0.11.0",
-    "load-grunt-tasks": "^3.1.0",
-    "time-grunt": "^1.0.0"
+    "grunt-release": "^0.13.0",
+    "load-grunt-tasks": "^3.3.0",
+    "time-grunt": "^1.2.2"
   },
   "keywords": [
     "gruntplugin"
