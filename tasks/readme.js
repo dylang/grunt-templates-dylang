@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     function repo () {
         var pkg = require(path.resolve(process.cwd(),'package.json'));
         var url = pkg.repository.url || pkg.repository;
-        var repoName = url && url.replace(/.*:\/\/github.com\/(.*)\.git/, '$1');
+        var repoName = url && url.replace(/.*:\/\/github.com\//, '').replace(/\.git$/, '');
         console.log('repoName = ', repoName);
         return repoName;
     }
